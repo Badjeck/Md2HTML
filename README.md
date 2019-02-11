@@ -6,7 +6,7 @@ Le programme md2html_converter.py ci-joint, permet de convertir un document réd
 
 ## Exigence
 
-Pour que le programme fonctionne, vous aurez besoin de Python 3, ainsi que des librairie os, click, glob ainsi que mardown2, cette dernière  
+Pour que le programme fonctionne, vous aurez besoin de Python 3, ainsi que des librairie os, click, glob, shutil ainsi que mardown2, cette dernière  
 n'étant pas compris dans les librairie native de Python 3.
 
 ## Telechargement
@@ -22,9 +22,11 @@ Ce programme fonctionne en ligne de commande, lancez le programme via un termina
 il faut ensuite lui donner les précisions necessaires:
 * -i pour préciser le dossier contenant le fichier markdown a convertir
 * -o pour préciser le dossier ou sera enregistrer le fichier html (site_statique par defaut)
-* -n pour préciser le nom du fichier html (site par defaut)  
+* -n pour préciser le nom du fichier html (site par defaut) 
+* -i pour préciser le dossier contenant les images à transférer avec le mardown
 
-le dossier contenant le site sera présent dans le dossier indiqué contenant le markdown.
+
+le dossier contenant le site sera présent dans le dossier indiqué contenant le markdown, il contiendra le fichier html du site ainsi qu'un dossier avec vos images du même nom que le dossier image source.
 
 Par exemple :  
 
