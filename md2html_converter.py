@@ -2,11 +2,13 @@ from markdown2 import Markdown
 import os
 import click
 import glob
+import shutil
 
 @click.command()
 @click.option("-i","--input-directory", "--input_directory",default='',help='dossier a convertir')
 @click.option("-o","--output-directory","--output_directory",default='site_statique',help='dossier a creer')
 @click.option("-n","--website-name","--website_name",default='site',help='nom du site')
+@click.option("-p", "--picture",default='',help='dossier ou son stockee les images')
 
 
 def convert(input_directory,output_directory,website_name):
@@ -21,11 +23,14 @@ def convert(input_directory,output_directory,website_name):
                         mdintofolder = glob.glob('*.md')
 
                 os.mkdir(output_directory)
+                shutil.copytree('{}\\{}'.format(input_directory,image),'{}\\{}'.fomat(output_directory,image))
+    
                 out_dir = open("./{}/{}.html".format(output_directory,website_name), "w")
                 with open(mdintofolder[0],"r") as fichier:
                         out_dir.write('<!DOCTYPE html>\n<head>\n<meta charset="utf-8">\n</head>\n<body>\n')
                         out_dir.write(Markdown().convert(fichier.read()))
                         out_dir.write('\n</body>')
+
 
 
 if __name__ == '__main__':
