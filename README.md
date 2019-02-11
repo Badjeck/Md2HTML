@@ -1,22 +1,22 @@
-#Site static
+# Site static
 
-##Descritpion
+## Descritpion
 
 Le programme md2html_converter.py ci-joint, permet de convertir un document rédiger en .md en un document html pour un site static.
 
-##Exigence
+## Exigence
 
 Pour que le programme fonctionne, vous aurez besoin de Python 3, ainsi que des librairie os, click, ainsi que mardown2, cette dernière  
 n'étant pas compris dans les librairie native de Python 3.
 
-##Telechargement
+## Telechargement
 
 [Telechargement Python 3](https://www.python.org/downloads/)  
 [Telechargement markdown2](https://pypi.org/project/markdown2/)  
 
 La librairie markdown2 pouvant aussi être installé grâce a un terminal via la commande pip : pip install mardown2
 
-##Fonctionnement
+## Fonctionnement
 
 **/!\Le programme doit se trouver dans le dossier du fichier a convertir**
 
