@@ -22,9 +22,9 @@ La librairie markdown2 pouvant aussi être installé grâce a un terminal via la
 
 Ce programme fonctionne en ligne de commande, lancez le programme via un terminal en entrant le nom de ce dernier précédé de py ou python,
 il faut ensuite lui donner les précisions necessaires:
-*-i pour préciser le fichier markdown a convertir
-*-o pour préciser le dossier ou sera enregistrer le fichier html (site_statique par defaut)
-*-n pour préciser le nom du fichier html (site par defaut)
+* -i pour préciser le fichier markdown a convertir
+* -o pour préciser le dossier ou sera enregistrer le fichier html (site_statique par defaut)
+* -n pour préciser le nom du fichier html (site par defaut)
 
 Par exemple :  
 
