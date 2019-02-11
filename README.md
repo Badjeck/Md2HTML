@@ -22,7 +22,9 @@ Ce programme fonctionne en ligne de commande, lancez le programme via un termina
 il faut ensuite lui donner les précisions necessaires:
 * -i pour préciser le dossier contenant le fichier markdown a convertir
 * -o pour préciser le dossier ou sera enregistrer le fichier html (site_statique par defaut)
-* -n pour préciser le nom du fichier html (site par defaut)
+* -n pour préciser le nom du fichier html (site par defaut)  
+
+le dossier contenant le site sera présent dans le dossier indiqué contenant le markdown.
 
 Par exemple :  
 
